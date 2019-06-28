@@ -34,10 +34,10 @@ The project was designed with SDAccel v2018.2.xdf targeting the Xilinx Alveo U20
 #### Dependencies 
 
 * GNU Make
-* A C++ compiler
+* A C,C++ compiler
 * A Fortran compiler (for LAPACK)
 * SDAccel v2018.2.xdf environment and env. paths set (i.e. XILINX_SDX and XILINX_XRT)
-* An Alveo U200 board installed on your system 
+* An Alveo U200 and board files installed on your system 
 * OpenBlas/LAPACK package (required for FAISS)
   * On Ubuntu:
       ```sh
@@ -50,11 +50,13 @@ The project was designed with SDAccel v2018.2.xdf targeting the Xilinx Alveo U20
       
 #### Quick start 
 
-The project includes the default CPU FAISS and the FPGA-accelerated in unified static libraries (libfaiss_sw.a, libfaiss_hw.a). The user can switch between each implementation easily:
+The project includes the default CPU FAISS and the FPGA-accelerated one in unified static libraries (libfaiss_sw.a, libfaiss_hw.a). The user can switch between each implementation easily:
 
 * To run the approximate similarity search example (IVVFlat) <br/>
   Go to ```/example/``` folder and run ```make TARGET=sw``` or ```make TARGET=hw``` <br/>
   Make sure to run ```make clean``` when changing builds.
+
+For more information see  [docs](https://github.com/dimdano/faiss-fpga/docs/)
 
 ## HW specs
 
