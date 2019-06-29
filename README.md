@@ -18,6 +18,8 @@
 
 <br>
 
+
+
 ## Overview
 
 FAISS-FPGA is built upon FAISS framework which is a a popular library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size and is written in C++ with complete wrappers for Python. It is developed by Facebook AI Research. 
@@ -25,6 +27,8 @@ FAISS is based on an approximate KNN (k-nearest neighbors) algorithm which is bu
 Most of the available indexing structures correspond to various trade-offs with respect to search time, memory, accuracy, etc.
 
 In the FAISS-FPGA project we chose to focus on IVFFlat index structure because it performs well overall and is good for high accuracy regimes. The search is already very fast, however the building of the index involves many MAC operations. So, we designed a hardware accelerator for OpenCL-FPGAs using SDAccel that accelerates the Index creation which takes up a substancial time. The new FAISS-FPGA framework works as a unified hardware-accelerated library with the FPGA-OpenCL API being hidden under the framework. The user can seamlessy select between the default CPU implementation of FAISS or the FPGA accelerated one.
+
+#### Link to youtube video: [https://www.youtube.com/watch?v=a7iEHEheDxs](https://www.youtube.com/watch?v=a7iEHEheDxs)
 
 ## Installation
 
@@ -56,7 +60,7 @@ The project includes the default CPU FAISS and the FPGA-accelerated one in unifi
   Go to ```/example/``` folder and run ```make TARGET=sw``` or ```make TARGET=hw``` <br/>
   Make sure to run ```make clean``` when changing builds.
 
-For more information see  [docs](https://github.com/dimdano/faiss-fpga/docs/)
+For more information see  [docs](https://github.com/dimdano/faiss-fpga/tree/master/docs)
 
 ## HW specs
 
@@ -75,6 +79,7 @@ LUT	|	89206	|	1182240	|  	7|
 FF	|	156137	|	2364480	|  	6| 
 
 ## References
+
 
 
 #### Contributor
