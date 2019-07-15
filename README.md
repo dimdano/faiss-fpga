@@ -80,12 +80,25 @@ FF	|	156137	|	2364480	|  	6|
 
 ## References
 
+#### Publication
 
+If you use any part of this work, we would love to hear about it and would very much appreciate a citation:
 
-#### Contributor
+```
+@misc{
+  author =       "Dimitrios Danopoulos, Christoforos Kachris, and Dimitrios Soudris",
+  title =        "FPGA Acceleration of Approximate KNN Indexing on High-Dimensional Vectors",
+  conference =   "14th International Symposium on Reconfigurable Communication-centric Systems-on-Chip (ReCoSoC)",
+  year =         "2019",
+  month =        "July",
+}
+```
+#### Contact 
+
+* Contributor <br/>
 `Dimitrios Danopoulos`: dimdano@microlab.ntua.gr
 
-#### Supervisor
+* Supervisor <br/>
 `Christoforos Kachris`: kachris@microlab.ntua.gr
 
 
