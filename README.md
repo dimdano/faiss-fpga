@@ -93,6 +93,12 @@ If you use any part of this work, we would love to hear about it and would very 
   month =        "July",
 }
 ```
+#### Acknowledgements
+
+This project has received funding from the Hellenic Foundation for Research and Innovation (HFRI) and the Genal Secretariat for Research and Technology (GSRT) under grant agreement no 2212 and the Xilinx University Program.
+    <img src="http://www.elidek.gr/wp-content/uploads/2018/05/HFRI_LOGO_SMALL.png" alt="" width=355 height=164>
+    <img src="https://www.cl.cam.ac.uk/teaching/1011/P33/logo/xup.jpg" alt="" width=125 height=126>
+
 #### Contact 
 
 * Contributor <br/>
